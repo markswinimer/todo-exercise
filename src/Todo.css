@@ -1,4 +1,63 @@
+/* Colors */
+/* #674F23
+#E48B69
+#E1B365
+#E5DB84
+#FFEEAC
+font-family: 'Unna', serif;
+font-family: 'Ropa Sans', sans-serif;
+font-family: 'Righteous', cursive; */
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  height: 100vh;
+  padding: 50px 0;
+  background-color: white
+}
 .Todo {
   margin: auto;
-  text-align: center;
+  padding: 50px;
+  text-align: left;
+  max-width: 400px;
+  color: white;
+  font-family: 'Righteous', sans-serif; /* cursive font looks closer to sans-serif*/
+  letter-spacing: 2px;
+  background-color: #E48B69;
+  border-radius: 3px;
+}
+.Todo-Form {
+  margin-top: 20px;
+}
+h2  {
+  margin-bottom: 5px;
+}
+.Todo-Form input {
+  border: none;
+  /* font-family: 'Righteous', sans-serif; */
+  letter-spacing: 2px;
+  font-size: 10px;
+  min-height: 20px;
+  margin-right: 10px;
+  padding: 10px 0px;
+  /* padding: 10px; */
+  border-radius: 1px;
+  font-family: 'Ropa Sans', sans-serif;
+
+}
+.Todo-Form button {
+  border: none;
+  background-color: #FFEEAC;
+  color: #674F23;
+  font-family: 'Righteous', sans-serif;
+  font-size: 20px;
+  padding: 0 20px;
+  width: auto;
+  height: 40px;
+  margin-left: auto;
+  vertical-align: bottom;
+  letter-spacing: 1px;
+  min-height: 40px;
+  border-radius:  1px;
 }
