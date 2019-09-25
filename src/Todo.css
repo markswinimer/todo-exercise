@@ -7,20 +7,25 @@
 font-family: 'Unna', serif;
 font-family: 'Ropa Sans', sans-serif;
 font-family: 'Righteous', cursive; */
+
+
 * {
   padding: 0;
   margin: 0;
 }
+h1 {
+    padding: 0 50px;
+}
 .App {
   height: 100vh;
-  padding: 50px 0;
+  margin: 50px 20%;
   background-color: white
 }
 .Todo {
-  margin: auto;
-  padding: 50px;
+  margin: 20px auto;
+  padding: 50px 0;
   text-align: left;
-  max-width: 400px;
+  min-width: 500px;
   color: white;
   font-family: 'Righteous', sans-serif; /* cursive font looks closer to sans-serif*/
   letter-spacing: 2px;
@@ -29,21 +34,26 @@ font-family: 'Righteous', cursive; */
 }
 .Todo-Form {
   margin-top: 20px;
+  padding: 0 50px;
+}
+h1  {
+  margin-bottom: 25px;
 }
 h2  {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .Todo-Form input {
   border: none;
   /* font-family: 'Righteous', sans-serif; */
-  letter-spacing: 2px;
   font-size: 10px;
   min-height: 20px;
   margin-right: 10px;
-  padding: 10px 0px;
-  /* padding: 10px; */
+  padding: 10px 10px;
   border-radius: 1px;
+  font-size: 20px;
   font-family: 'Ropa Sans', sans-serif;
+  color: gray;
+  /* font-family: 'Righteous', sans-serif; */
 
 }
 .Todo-Form button {
@@ -51,6 +61,7 @@ h2  {
   background-color: #FFEEAC;
   color: #674F23;
   font-family: 'Righteous', sans-serif;
+  font-family: 'Ropa Sans', sans-serif;
   font-size: 20px;
   padding: 0 20px;
   width: auto;
@@ -60,4 +71,58 @@ h2  {
   letter-spacing: 1px;
   min-height: 40px;
   border-radius:  1px;
+}
+
+.List {
+  display: flex;
+  flex-direction: row;
+}
+.ListItem {
+  font-family: 'Ropa Sans', sans-serif;
+  background-color: #FFEEAC;
+  color: #674F23;
+  vertical-align: middle;
+  line-height: 50px;
+  height: 50px;
+  padding-left: 50px;
+  text-align: left;
+  font-size: 22px;
+  margin: 5px 0;
+  flex-grow: 1;
+}
+.ListIcons {
+  background-color: #FFEEAC;
+  color: #674F23;
+  vertical-align: middle;
+  line-height: 50px;
+  height: 50px;
+  text-align: left;
+  padding-right: 50px;
+  font-size: 20px;
+  margin: 5px 0;
+  color: #674F23;
+}
+
+.ListIcons i {
+  display: inline;
+  font-size: 20px;
+  margin: 0 7px;
+}
+
+i:hover {
+  transition: .2s;
+  color: #C76742;
+  cursor: pointer;
+}
+.BlankItem {
+  font-family: 'Ropa Sans', sans-serif;
+  background-color: #FFEEAC;
+  color: #674F23;
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 50px;
+  height: 50px;
+  padding-left: 50px;
+  text-align: left;
+  margin: 5px 0;
 }
