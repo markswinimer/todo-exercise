@@ -11,7 +11,7 @@ class Todo extends Component {
     }
     this.addItem = this.addItem.bind(this);
     this.delete = this.delete.bind(this);
-    this.edit = this.edit.bind(this);
+    this.update = this.update.bind(this);
     this.checkOff = this.checkOff.bind(this);
   }
 
@@ -25,8 +25,15 @@ class Todo extends Component {
     })
   }
 
-  edit(id) {
+  update(id, edit) {
 
+    const updatedList = this.state.itemList.map(item => {
+      if(item.id === id) {
+        return {...item, item: edit};
+      }
+      return item;
+    })
+    this.setState({ itemList: updatedList })
   }
 
   checkOff(id) {
@@ -42,7 +49,7 @@ class Todo extends Component {
 
   render() {
     let list = this.state.itemList.map(newItem =>
-      <ListItem onClick={this.checkOff} item={newItem.item} id={newItem.id} delete={this.delete} checkedOff={newItem.checkedOff}/>
+      <ListItem update={this.update} onClick={this.checkOff} item={newItem.item} id={newItem.id} delete={this.delete} checkedOff={newItem.checkedOff}/>
     )
 
 

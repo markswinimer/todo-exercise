@@ -56,7 +56,7 @@ h2  {
   /* font-family: 'Righteous', sans-serif; */
 
 }
-.Todo-Form button {
+.List-Button,.Todo-Form button {
   border: none;
   background-color: #FFEEAC;
   color: #674F23;
