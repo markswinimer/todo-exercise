@@ -28,14 +28,16 @@ class NewTodoForm extends Component {
       <div className="Todo-Form">
         <h2>New Todo</h2>
         <form onSubmit={this.handleSubmit}>
-          <input
-            type="text"
-            name="listItem"
-            value={this.state.item}
-            onChange={this.handleChange}
-            id="listItem"
-          />
-          <button>NEW ITEM</button>
+          <div className="form-flex">
+            <input
+              type="text"
+              name="listItem"
+              value={this.state.item}
+              onChange={this.handleChange}
+              id="listItem"
+            />
+            <button>NEW ITEM</button>
+          </div>
         </form>
       </div>
     )

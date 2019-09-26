@@ -8,24 +8,31 @@ font-family: 'Unna', serif;
 font-family: 'Ropa Sans', sans-serif;
 font-family: 'Righteous', cursive; */
 
-
 * {
   padding: 0;
   margin: 0;
 }
 h1 {
     padding: 0 50px;
+    margin-bottom: 25px;
 }
+
+h2  {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  flex-basis: 100%;
+}
+
 .App {
-  height: 100vh;
-  margin: 50px 20%;
+  margin: 100px;
   background-color: white
 }
 .Todo {
   margin: 20px auto;
   padding: 50px 0;
   text-align: left;
-  min-width: 500px;
+  max-width: 550px;
+  min-width: 400px;
   color: white;
   font-family: 'Righteous', sans-serif; /* cursive font looks closer to sans-serif*/
   letter-spacing: 2px;
@@ -33,18 +40,23 @@ h1 {
   border-radius: 3px;
 }
 .Todo-Form {
-  margin-top: 20px;
-  padding: 0 50px;
+  padding-left: 50px;
 }
-h1  {
-  margin-bottom: 25px;
+
+.edit-form {
+  margin: 10px auto;
+  padding-left: 50px;
 }
-h2  {
-  margin-bottom: 10px;
+.form-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
-.Todo-Form input {
+
+.form-flex input {
+  flex-grow: 2;
+  height: auto;
   border: none;
-  /* font-family: 'Righteous', sans-serif; */
   font-size: 10px;
   min-height: 20px;
   margin-right: 10px;
@@ -53,30 +65,29 @@ h2  {
   font-size: 20px;
   font-family: 'Ropa Sans', sans-serif;
   color: gray;
-  /* font-family: 'Righteous', sans-serif; */
-
 }
-.List-Button,.Todo-Form button {
+
+.form-flex button {
+  white-space: nowrap;
   border: none;
   background-color: #FFEEAC;
   color: #674F23;
-  font-family: 'Righteous', sans-serif;
   font-family: 'Ropa Sans', sans-serif;
   font-size: 20px;
   padding: 0 20px;
-  width: auto;
   height: 40px;
-  margin-left: auto;
-  vertical-align: bottom;
   letter-spacing: 1px;
-  min-height: 40px;
-  border-radius:  1px;
+  min-height: 42px;
+  border-radius: 1px;
+  margin-right: 50px;
 }
+
 
 .List {
   display: flex;
   flex-direction: row;
 }
+
 .ListItem {
   font-family: 'Ropa Sans', sans-serif;
   background-color: #FFEEAC;

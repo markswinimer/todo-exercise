@@ -26,7 +26,6 @@ class Todo extends Component {
   }
 
   update(id, edit) {
-
     const updatedList = this.state.itemList.map(item => {
       if(item.id === id) {
         return {...item, item: edit};
@@ -49,10 +48,15 @@ class Todo extends Component {
 
   render() {
     let list = this.state.itemList.map(newItem =>
-      <ListItem update={this.update} onClick={this.checkOff} item={newItem.item} id={newItem.id} delete={this.delete} checkedOff={newItem.checkedOff}/>
+      <ListItem
+        update={this.update}
+        onClick={this.checkOff}
+        item={newItem.item}
+        id={newItem.id}
+        delete={this.delete}
+        checkedOff={newItem.checkedOff}
+      />
     )
-
-
     return(
       <div className="Todo">
         <h1>Todo List</h1>
